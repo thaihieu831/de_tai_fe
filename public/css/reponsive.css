@@ -493,6 +493,7 @@
     .logo img,
     .slogan img {
         margin: auto;
+        width: 100%;
     }
 
     .slogan,

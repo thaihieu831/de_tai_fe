@@ -597,6 +597,10 @@ body {
     padding-top: 50px;
 }
 
+.box-project .container{
+    max-width: 1366px;
+}
+
 .tittle-projects {
     text-align: center;
 }
@@ -1025,6 +1029,10 @@ footer {
     background: #1C1A1B;
     padding: 40px 0px;
     border-top: 3px solid #f4c601;
+}
+
+footer .container{
+    max-width: 1220px;
 }
 
 .info-footer h3 {

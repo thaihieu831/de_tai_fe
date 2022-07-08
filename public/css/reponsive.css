@@ -707,13 +707,6 @@
     }
 }
 
-@media screen and (max-width: 862.4px) {
-    .fanpage-ft iframe{
-        width: 150px;
-        height: 150px;
-    }
-}
-
 @media screen and (max-width: 815.2px) {
     .title-section-clip p {
         width: 34%;

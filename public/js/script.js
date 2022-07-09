@@ -274,13 +274,13 @@ function dropdownMenu() {
   let gt = document.getElementById("dropdown-menu1");
   if (gt.style.display === "block") {
     gt.style.display = "none";
-    document.getElementById("btn-dropdown-menu").style.transform = "rotate(0deg)"; 
-    document.getElementById("btn-dropdown-menu").style.color = "#8a8987";   
+    document.getElementById("btn-dropdown-menu").style.transform = "rotate(0deg)";
+    document.getElementById("btn-dropdown-menu").style.color = "#8a8987";
   }
   else {
     gt.style.display = "block";
-    document.getElementById("btn-dropdown-menu").style.transform = "rotate(90deg)"; 
-    document.getElementById("btn-dropdown-menu").style.color = "#f4c601";  
+    document.getElementById("btn-dropdown-menu").style.transform = "rotate(90deg)";
+    document.getElementById("btn-dropdown-menu").style.color = "#f4c601";
   }
 }
 
@@ -289,13 +289,13 @@ function dropdownMenu1() {
   let ks = document.getElementById("dropdown-menu2");
   if (ks.style.display === "block") {
     ks.style.display = "none";
-    document.getElementById("btn-dropdown-menu1").style.transform = "rotate(0deg)"; 
-    document.getElementById("btn-dropdown-menu1").style.color = "#8a8987"; 
+    document.getElementById("btn-dropdown-menu1").style.transform = "rotate(0deg)";
+    document.getElementById("btn-dropdown-menu1").style.color = "#8a8987";
   }
   else {
     ks.style.display = "block";
-    document.getElementById("btn-dropdown-menu1").style.transform = "rotate(90deg)"; 
-    document.getElementById("btn-dropdown-menu1").style.color = "#f4c601"; 
+    document.getElementById("btn-dropdown-menu1").style.transform = "rotate(90deg)";
+    document.getElementById("btn-dropdown-menu1").style.color = "#f4c601";
   }
 }
 
@@ -303,13 +303,13 @@ function dropdownMenu2() {
   let bt = document.getElementById("dropdown-menu3");
   if (bt.style.display === "block") {
     bt.style.display = "none";
-    document.getElementById("btn-dropdown-menu2").style.transform = "rotate(0deg)"; 
-    document.getElementById("btn-dropdown-menu2").style.color = "#8a8987"; 
+    document.getElementById("btn-dropdown-menu2").style.transform = "rotate(0deg)";
+    document.getElementById("btn-dropdown-menu2").style.color = "#8a8987";
   }
   else {
     bt.style.display = "block";
-    document.getElementById("btn-dropdown-menu2").style.transform = "rotate(90deg)"; 
-    document.getElementById("btn-dropdown-menu2").style.color = "#f4c601"; 
+    document.getElementById("btn-dropdown-menu2").style.transform = "rotate(90deg)";
+    document.getElementById("btn-dropdown-menu2").style.color = "#f4c601";
   }
 }
 
@@ -317,13 +317,13 @@ function dropdownMenu3() {
   let np = document.getElementById("dropdown-menu4");
   if (np.style.display === "block") {
     np.style.display = "none";
-    document.getElementById("btn-dropdown-menu3").style.transform = "rotate(0deg)"; 
-    document.getElementById("btn-dropdown-menu3").style.color = "#8a8987"; 
+    document.getElementById("btn-dropdown-menu3").style.transform = "rotate(0deg)";
+    document.getElementById("btn-dropdown-menu3").style.color = "#8a8987";
   }
   else {
     np.style.display = "block";
-    document.getElementById("btn-dropdown-menu3").style.transform = "rotate(90deg)"; 
-    document.getElementById("btn-dropdown-menu3").style.color = "#f4c601"; 
+    document.getElementById("btn-dropdown-menu3").style.transform = "rotate(90deg)";
+    document.getElementById("btn-dropdown-menu3").style.color = "#f4c601";
   }
 }
 
@@ -331,13 +331,13 @@ function dropdownMenu4() {
   let nt = document.getElementById("dropdown-menu5");
   if (nt.style.display === "block") {
     nt.style.display = "none";
-    document.getElementById("btn-dropdown-menu4").style.transform = "rotate(0deg)"; 
+    document.getElementById("btn-dropdown-menu4").style.transform = "rotate(0deg)";
     document.getElementById("btn-dropdown-menu4").style.color = "#8a8987";
   }
   else {
     nt.style.display = "block";
-    document.getElementById("btn-dropdown-menu4").style.transform = "rotate(90deg)"; 
-    document.getElementById("btn-dropdown-menu4").style.color = "#f4c601"; 
+    document.getElementById("btn-dropdown-menu4").style.transform = "rotate(90deg)";
+    document.getElementById("btn-dropdown-menu4").style.color = "#f4c601";
   }
 }
 
@@ -345,13 +345,13 @@ function dropdownMenu5() {
   let dt = document.getElementById("dropdown-menu6");
   if (dt.style.display === "block") {
     dt.style.display = "none";
-    document.getElementById("btn-dropdown-menu5").style.transform = "rotate(0deg)"; 
+    document.getElementById("btn-dropdown-menu5").style.transform = "rotate(0deg)";
     document.getElementById("btn-dropdown-menu5").style.color = "#8a8987";
   }
   else {
     dt.style.display = "block";
-    document.getElementById("btn-dropdown-menu5").style.transform = "rotate(90deg)"; 
-    document.getElementById("btn-dropdown-menu5").style.color = "#f4c601"; 
+    document.getElementById("btn-dropdown-menu5").style.transform = "rotate(90deg)";
+    document.getElementById("btn-dropdown-menu5").style.color = "#f4c601";
   }
 }
 
@@ -359,13 +359,13 @@ function dropdownMenu6() {
   let pt = document.getElementById("dropdown-menu7");
   if (pt.style.display === "block") {
     pt.style.display = "none";
-    document.getElementById("btn-dropdown-menu6").style.transform = "rotate(0deg)"; 
+    document.getElementById("btn-dropdown-menu6").style.transform = "rotate(0deg)";
     document.getElementById("btn-dropdown-menu6").style.color = "#8a8987";
   }
   else {
     pt.style.display = "block";
-    document.getElementById("btn-dropdown-menu6").style.transform = "rotate(90deg)"; 
-    document.getElementById("btn-dropdown-menu6").style.color = "#f4c601"; 
+    document.getElementById("btn-dropdown-menu6").style.transform = "rotate(90deg)";
+    document.getElementById("btn-dropdown-menu6").style.color = "#f4c601";
   }
 }
 
@@ -373,12 +373,12 @@ function dropdownMenu7() {
   let tv = document.getElementById("dropdown-menu8");
   if (tv.style.display === "block") {
     tv.style.display = "none";
-    document.getElementById("btn-dropdown-menu7").style.transform = "rotate(0deg)"; 
+    document.getElementById("btn-dropdown-menu7").style.transform = "rotate(0deg)";
     document.getElementById("btn-dropdown-menu7").style.color = "#8a8987";
   }
   else {
     tv.style.display = "block";
-    document.getElementById("btn-dropdown-menu7").style.transform = "rotate(90deg)"; 
-    document.getElementById("btn-dropdown-menu7").style.color = "#f4c601"; 
+    document.getElementById("btn-dropdown-menu7").style.transform = "rotate(90deg)";
+    document.getElementById("btn-dropdown-menu7").style.color = "#f4c601";
   }
 }

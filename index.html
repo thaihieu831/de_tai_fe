@@ -12,17 +12,20 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
             rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="icon" href="public/images/logo-anphat-icon-4280_100x100.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     </head>
     <body>
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
+        <button onclick="topFunction()" id="myBtn" class="mybtn" title="Go to top"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
         <header>
             <div class="header-top">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-2 logo">
-                            <img src="public/images/logo-chu-nhat-3938_216x65.png" alt="">
+                    <div class="d-flex flex-wrap justify-content-between align-items-end">
+                        <div class="logo">
+                            <img src="public/images/logo-thay-web-281_216x65.png" alt="">
                         </div>
-                        <div class="col-md-4">
+                        <div class="search-top d-flex flex-wrap justify-content-start align-items-center">
                             <span class="email">
                                 Email: congtyanphatgroups@gmail.com
                             </span>
@@ -31,10 +34,10 @@
                                 <button class="btn-search-first"><i class="fa-solid fa-magnifying-glass"></i></button>
                             </form>
                         </div>
-                        <div class="col-md-4 slogan">
+                        <div class="slogan">
                             <img src="public/images/banner03-3167-4047_380x42.png" alt="">
                         </div>
-                        <div class="col-md-2">
+                        <div class="social-top">
                             <div class="media">
                                 <img src="public/images/facebook-355_28x28.png" alt="" class="facebook">
                                 <img src="public/images/197b365922d1ea3aa1a932ff9bbda4a6-570_28x28.png" alt="" class="youtube">
@@ -54,7 +57,7 @@
             <div class="menu-mobile">
                 <button onclick="menuMobile()"><i class="fa-solid fa-bars"></i></button>
             </div>
-            <div class="container-fluid">
+            <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -235,7 +238,7 @@
                 <button><i class="fa-solid fa-angle-left" style="color: green; font-size: 22px;"></i></button>
             </div>
             <div class="btn-next">
-                <button><i class="fa-solid fa-angle-right" style="color: green;"></i></button>
+                <button><i class="fa-solid fa-angle-right" style="color: green; font-size: 22px;"></i></button>
             </div>
         </div>
         <div class="content-first">
@@ -243,11 +246,9 @@
                 <div class="row">
                     <div class="col-md-6">
                         <h5>TẠI SAO NÊN CHỌN</h5>
-                        <span class="title-first">KIẾN TRÚC</span> <span
-                            class="title-second">AN PHÁT</span> <span
-                            class="title-third">?</span>
-                        <P>Luôn đặt uy tín và chất lượng lên hàng đầu, <b>An
-                                Phát Group</b> đã và đang chiếm trọn<br>
+                        <h2>Kiến trúc <span>An phát</span> ?</h2>
+                        <P>Luôn đặt uy tín và chất lượng lên hàng đầu, <strong>An
+                            Phát Group</strong> đã và đang chiếm trọn<br>
                             niềm tin nơi Khách Hàng. Với đội ngũ Kiến Trúc
                             Sư có
                             tới hơn 15 năm kinh nghiệm<br>
@@ -259,7 +260,9 @@
                             Nhà phố, Nhà vườn, Thiết kế<br>
                             khách sạn, Thiết kế Dinh Thự, Trụ sở, Thiết kế
                             nội
-                            thất, [...] </p>
+                            thất, [...] 
+                        </p>
+                        <div class="btn-about d-flex flex-wrap justify-content-start"></div>
                         <a href="#" class="watch-detail">Xem chi tiết</a>
                         <a href="#" class="request">Yêu cầu tư vấn</a>
                     </div>
@@ -385,8 +388,7 @@
                                 <div class="info-col-search">
                                     <h3 class="tittle-col-search">TRA CỨU TUỔI XÂY DỰNG</h3>
                                     <p>Năm sinh</p>
-                                    <select name="year"
-                                        class="select-year-build-old">
+                                    <select name="year" class="select-year-build-old" style="width: 100%;">
                                         <option value="">Chọn năm sinh</option>
                                         <option>1900</option>
                                         <option>1901</option>
@@ -513,8 +515,7 @@
                                         <option>2022</option>
                                     </select>
                                     <p>Năm sinh xây dựng</p>
-                                    <select name="year"
-                                        class="select-year-build">
+                                    <select name="year" class="select-year-build" style="width: 100%;">
                                         <option value="">Chọn năm xây</option>
                                         <option>1900</option>
                                         <option>1901</option>
@@ -649,7 +650,7 @@
                                 <div class="info-col-search">
                                     <h3 class="tittle-col-search-1">TRA CỨU HƯỚNG XÂY NHÀ</h3>
                                     <p>Năm sinh gia chủ</p>
-                                    <select name="year" class="select-year">
+                                    <select name="year" class="select-year" style="width: 100%;">
                                         <option value="">Chọn năm sinh</option>
                                         <option>1900</option>
                                         <option>1901</option>
@@ -776,7 +777,7 @@
                                         <option>2022</option>
                                     </select>
                                     <p>Giới tính</p>
-                                    <select name="seg" class="select-seg">
+                                    <select name="seg" class="select-seg" style="width: 100%;">
                                         <option value="">Chọn giới tính</option>
                                         <option>Nam</option>
                                         <option>Nữ</option>
@@ -791,59 +792,56 @@
                     <div class="container">
                         <div class="col-md-12">
                             <div class="enter-col-search">
-                                <div class="container-fluid">
-                                    <h3 class="tittle-col-enter-search">
-                                        <span>Bạn có thể dự tính tương đối chi phí khi xây dựng ngôi nhà của bạn.</span>
-                                        <p>An Phát xin cảm ơn quý khách hàng.</p>
-                                    </h3>
-                                    <form action="" class="space-form row10 d-flex align-items-center justify-content-between flex-wrap">
-                                        <div class="col-md-6 item10">
-                                            <select class="select-house">
-                                                <option value="">Nhà phố 1 mặt tiền</option>
-                                                <option value="">Nhà phố 2 mặt tiền</option>
-                                                <option value="">Biệt thự hiện đại</option>
-                                                <option value="">Biệt thự tân cổ điển ,cổ điển</option>
-                                                <option value="">Biệt thự hiện đại</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-md-6 item10">
-                                            <select class="select-build-1">
-                                                <option value="">Xây thô</option>
-                                                <option value="">Xây thô + hoàn thiện trung bình</option>
-                                                <option value="">Xây thô + hoàn thiện khá</option>
-                                                <option value="">Xây thô + hoàn thiện tốt</option>
-                                                <option value="">Xây thô + hoàn thiện cao cấp</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-md-6 item10">
-                                            <input type="text" size="29" placeholder="Nhập diện tích 1 tầng(m2)" class="enter-floor-1">
-                                        </div>
-                                        <div class="col-md-6 item10">
-                                            <input type="text" size="30" placeholder="Nhập số tầng" class="enter-floor-2">
-                                        </div>
-                                        <div class="col-md-6 item10">
-                                            <select class="select-city-1">
-                                                <option value="">Chọn
-                                                    tỉnh/thành phố</option>
-                                                <option value="">Xây thô +
-                                                    hoàn thiện trung bình</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-md-6 item10">
-                                            <select class="select-city-2">
-                                                <option value="">Chọn
-                                                    Quận/huyện</option>
-                                                <option value="">Xây thô +
-                                                    hoàn thiện trung bình</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <button
-                                                class="btn-search-expect">Tra
-                                                cứu ngay</button>
-                                        </div>
-                                    </form>
-                                </div>
+                                <h3 class="tittle-col-enter-search item10">
+                                    Bạn có thể dự tính tương đối chi phí khi xây dựng ngôi nhà của bạn.
+                                    <br>
+                                    An Phát xin cảm ơn quý khách hàng.
+                                </h3>
+                                <form action="" class="space-form row10 align-items-center justify-content-between flex-wrap">
+                                    <div class="col-md-6 item10">
+                                        <select class="select-house" style="width: 100%;">
+                                            <option value="">Nhà phố 1 mặt tiền</option>
+                                            <option value="">Nhà phố 2 mặt tiền</option>
+                                            <option value="">Biệt thự hiện đại</option>
+                                            <option value="">Biệt thự tân cổ điển ,cổ điển</option>
+                                            <option value="">Biệt thự hiện đại</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 item10">
+                                        <select class="select-build-1" style="width: 100%;">
+                                            <option value="">Xây thô</option>
+                                            <option value="">Xây thô + hoàn thiện trung bình</option>
+                                            <option value="">Xây thô + hoàn thiện khá</option>
+                                            <option value="">Xây thô + hoàn thiện tốt</option>
+                                            <option value="">Xây thô + hoàn thiện cao cấp</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 item10">
+                                        <input type="text" placeholder="Nhập diện tích 1 tầng(m2)" size="100%" class="enter-floor-1" style="width: 100%;">
+                                    </div>
+                                    <div class="col-md-6 item10">
+                                        <input type="text" placeholder="Nhập số tầng" size="100%" class="enter-floor-2" style="width: 100%;">
+                                    </div>
+                                    <div class="col-md-6 item10">
+                                        <select class="select-city-1" style="width: 100%;">
+                                            <option value="">Chọn
+                                                tỉnh/thành phố</option>
+                                            <option value="">Xây thô +
+                                                hoàn thiện trung bình</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 item10">
+                                        <select class="select-city-2" style="width: 100%;">
+                                            <option value="">Chọn Quận/huyện</option>
+                                            <option value="">Xây thô +
+                                                hoàn thiện trung bình</option>
+                                        </select>
+                                    </div>
+                                    <br>
+                                    <div class="col-md-12" style="width: 100%;">
+                                        <button class="btn-search-expect">Tra cứu ngay</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -853,8 +851,7 @@
         <div class="content-four">
             <div class="title-service margin-bottom-30">
                 <h3 class="tittle-projects">CÁC DỰ ÁN</h3>
-                <P class="desc-projects">Tổng hợp các công trình đẹp đã hoàn
-                    thiện của kiến trúc An Phát</P>
+                <P class="desc-projects">Tổng hợp các công trình đẹp đã hoàn thiện của kiến trúc An Phát</P>
             </div>
             <div class="box-project">
                 <div class="container">
@@ -933,7 +930,7 @@
                         </div>
                         <div class="container-title-section">
                             <div class="row10 d-flex content-5-flex-colunm-1">
-                                <div class="col-md-6 item10">
+                                <div class="col-md-6 item10 ct-left">
                                     <div class="post-inner">
                                         <div class="post-image">
                                             <a href="#">
@@ -973,10 +970,10 @@
                                             <h3 class="title-post-inner">Thiết
                                                 Kế Nội Thất Biệt Thự...</h3>
                                             <p class="small-content">
-                                                Thiết kế nội thất hợp phong
-                                                <br> thủy có ý nghĩa vô cùng
-                                                quan <br> trọng, không chỉ
-                                                mang lại một...
+                                                Những điều kiêng kỵ trong
+                                                <br> phong thủy nhà ở này
+                                                bạn đã <br> biết để có được
+                                                ngôi nhà đẹp ...
                                             </p>
                                         </div>
                                     </div>
@@ -994,10 +991,10 @@
                                             <h3 class="title-post-inner">Thiết
                                                 Kế Nhà Ở Hợp Phong...</h3>
                                             <p class="small-content">
-                                                Thiết kế nhà hợp phong thủy
-                                                là <br> gì? Tại sao phải
-                                                thiết kế nhà <br> theo phong
-                                                thủy? Những điều ...
+                                                Những điều kiêng kỵ trong
+                                                <br> phong thủy nhà ở này
+                                                bạn đã <br> biết để có được
+                                                ngôi nhà đẹp ...
                                             </p>
                                         </div>
                                     </div>
@@ -1005,9 +1002,7 @@
                                         <div class="post-image-1">
                                             <a href="#">
                                                 <img
-                                                    src="public/images/biet-thu-2-tang-15-5414.jpg"
-                                                    alt=""
-                                                    class="image-block-1">
+                                                    src="public/images/biet-thu-2-tang-15-5414.jpg" alt="" class="image-block-1">
                                             </a>
                                         </div>
                                         <div class="post-content-2">
@@ -1025,9 +1020,7 @@
                                         <div class="post-image-1">
                                             <a href="#">
                                                 <img
-                                                    src="public/images/biet-thu-2-tang-15-5414.jpg"
-                                                    alt=""
-                                                    class="image-block-1">
+                                                    src="public/images/biet-thu-2-tang-15-5414.jpg" alt="" class="image-block-1">
                                             </a>
                                         </div>
                                         <div class="post-content-2">
@@ -1054,24 +1047,48 @@
                             <iframe class="video-clip-yt"
                                 src="https://www.youtube.com/embed/QofGfhfTaEo?rel=0&amp;autoplay=0&amp;wmode=transparent"
                                 allowfullscreen="" frameborder="0"
-                                width="560" height="315"></iframe>
+                                width="470" height="460"></iframe>
                         </div>
                         <div class="lazy1">
                             <div>
-                                <img src="public/images/default (3).jpg"
-                                    alt="" width="100%">
+                                <div class="image-video-clip">
+                                    <img src="public/images/default (3).jpg" alt="" width="119.996px">
+                                </div>
                             </div>
                             <div>
-                                <img src="public/images/default.jpg" alt=""
-                                    width="100%">
+                                <div class="image-video-clip">
+                                    <img src="public/images/default.jpg" alt="" width="119.996px">
+                                </div>
                             </div>
                             <div>
-                                <img src="public/images/default (2).jpg"
-                                    alt="" width="100%">
+                                <div class="image-video-clip">
+                                    <img src="public/images/default (2).jpg" alt="" width="119.996px">
+                                </div>
                             </div>
                             <div>
-                                <img src="public/images/default (1).jpg"
-                                    alt="" width="100%">
+                                <div class="image-video-clip">
+                                    <img src="public/images/default (1).jpg" alt="" width="119.996px">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="image-video-clip">
+                                    <img src="public/images/default (3).jpg" alt="" width="119.996px">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="image-video-clip">
+                                    <img src="public/images/default.jpg" alt="" width="119.996px">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="image-video-clip">
+                                    <img src="public/images/default (2).jpg" alt="" width="119.996px">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="image-video-clip">
+                                    <img src="public/images/default (1).jpg" alt="" width="119.996px"">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1088,26 +1105,15 @@
                     <div class="col-md-3">
                         <div class="col-content-six-1">
                             <div class="demo-image-house">
-                                <img
-                                    src="public/images/biet-thu-mai-thai-3-tang-bt3461-9204.jpg"
-                                    alt="" width="100%">
+                                <img src="public/images/biet-thu-mai-thai-3-tang-bt3461-9204.jpg" alt="" width="100%">
                             </div>
-                            <div class="title-demo-house">
-                                <p>Mê mẩn biệt thự mái thái 3 tầng tân cổ
-                                    <br>
-                                    điển
-                                    tại Bắc Ninh</p>
-                            </div>
+                            <h2>Mê mẩn biệt thự mái thái 3 tầng tân cổ điển tại Bắc Ninh</h2>
                             <div class="desc-demo-house">
                                 <p>Biệt thự mái thái 3 tầng tân cổ điển,
-                                    sang
-                                    trọng
+                                    sang trọng
                                     và đẳng cấp tại Bắc Ninh là một sản phẩm
-                                    tâm
-                                    huyết của Kiến trúc An Phát. Tổng thể
-                                    căn
-                                    biệt
-                                    thự mái...</p>
+                                    tâm huyết của Kiến trúc An Phát. Tổng thể
+                                    căn biệt thự mái...</p>
                             </div>
                         </div>
                     </div>
@@ -1118,23 +1124,12 @@
                                     src="public/images/biet-thu-tan-co-2-tang-dep-2198.jpg"
                                     alt="" width="100%">
                             </div>
-                            <div class="title-demo-house">
-                                <p>Thiết kế biệt thự 2 tầng - Nhà đẹp 2 tầng
-                                    An
-                                    Phát
-                                    Group</p>
-                            </div>
+                                <h2>Thiết kế biệt thự 2 tầng - Nhà đẹp 2 tầng An Phát Group</h2>
                             <div class="desc-demo-house">
-                                <p>Thiết kế biệt thự 2 tầng là sự lựa chọn
-                                    hợp
-                                    lí cả
-                                    về chi phí xây dựng đến công năng sử
-                                    dụng .
-                                    Mẫu
-                                    <br> thiết kế nhà đẹp 2 tầng với diện
-                                    tích
-                                    đất
-                                    642m2...</p>
+                                <p>Thiết kế biệt thự 2 tầng là sự lựa chọn hợp
+                                    lí cả về chi phí xây dựng đến công năng sử
+                                    dụng. Mẫu
+                                    <br> thiết kế nhà đẹp 2 tầng với diện tích đất 642m2...</p>
                             </div>
                         </div>
                     </div>
@@ -1145,12 +1140,7 @@
                                     src="public/images/thiet-ke-nha-dep-3-tang-9602.jpg"
                                     alt="" width="100%">
                             </div>
-                            <div class="title-demo-house">
-                                <p>Mẫu thiết kế nhà biệt thự đẹp 3 tầng tân
-                                    cổ
-                                    198m2
-                                    tại Nam Định</p>
-                            </div>
+                                <h2>Mẫu thiết kế nhà biệt thự đẹp 3 tầng tân cổ 198m2 tại Nam Định</h2>
                             <div class="desc-demo-house">
                                 <p>Mẫu thiết kế nhà biệt thự đẹp 3 tầng là
                                     sự
@@ -1172,11 +1162,9 @@
                                     src="public/images/biet-thu-tan-co-dien-bt3303-5711.jpg"
                                     alt="" width="100%">
                             </div>
-                            <div class="title-demo-house">
-                                <p>Bật mí những mẫu biệt thự 3 tầng được yêu
+                                <h2>Bật mí những mẫu biệt thự 3 tầng được yêu
                                     thích
-                                    nhất năm 2020</p>
-                            </div>
+                                    nhất năm 2020</h2>
                             <div class="desc-demo-house">
                                 <p>Nhu cầu thiết kế biệt thự 3 tầng đang
                                     ngày
@@ -1196,12 +1184,10 @@
                                     src="public/images/mau-biet-thu-dep-9680.jpg"
                                     alt="" width="100%">
                             </div>
-                            <div class="title-demo-house">
-                                <p>Tổng hợp hình ảnh những mẫu nhà - biệt
+                                <h2>Tổng hợp hình ảnh những mẫu nhà - biệt
                                     thự
                                     đẹp
-                                    nhất</p>
-                            </div>
+                                    nhất</h2>
                             <div class="desc-demo-house">
                                 <p>Top những mẫu nhà đẹp, tổng hợp 10 thiết
                                     kế
@@ -1222,12 +1208,10 @@
                                     src="public/images/biet-thu-tan-co-dien-dep-9045.jpg"
                                     alt="" width="100%">
                             </div>
-                            <div class="title-demo-house">
-                                <p>Thiết kế biệt thự tân cổ điển đẹp 300m2
+                                <h2>Thiết kế biệt thự tân cổ điển đẹp 300m2
                                     tại
                                     Thanh
-                                    Hóa</p>
-                            </div>
+                                    Hóa</h2>
                             <div class="desc-demo-house">
                                 <p>Mẫu thiết kế biệt thự tân cổ điển 1,8 tỷ
                                     này
@@ -1241,7 +1225,7 @@
                                     hài lòng..</p>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                 </div>
             </div>
         </div>
@@ -1435,7 +1419,7 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <div class="widget-ft">
                             <div class="info-footer">
                                 <h3>GIỚI THIỆU</h3>
@@ -1483,7 +1467,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <div class="widget-ft">
                             <div class="info-footer">
                                 <h3>LINK HỮU ÍCH</h3>
@@ -1510,7 +1494,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <div class="widget-ft">
                             <div class="info-footer">
                                 <h3>THÔNG TIN CÔNG TY</h3>
@@ -1525,7 +1509,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <div class="widget-ft">
                             <div class="info-footer">
                                 <h3>CHÍNH SÁCH</h3>
@@ -1544,7 +1528,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="fanpage-ft">
                             <iframe
                                 src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthietkenhadepanphat%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
@@ -1966,7 +1950,7 @@
                         </li>
                         <li class="nav-item-mb">
                             <a href="#" class="a-img">Giới thiệu</a>
-                            <span class="btn-dropdown-menu" onclick="dropdownMenu()"><i class="fa fa-angle-right"></i></span>
+                            <span class="btn-dropdown-menu" onclick="dropdownMenu()"><i class="fa fa-angle-right" id="btn-dropdown-menu"></i></span>
                             <ul class="sub-menu" id="dropdown-menu1">
                                 <li><a href="#">GIỚI THIỆU CHUNG</a></li>
                                 <li><a href="#">HỒ SƠ NĂNG LỰC</a></li>
@@ -1975,7 +1959,7 @@
                         </li>
                         <li class="nav-item-mb">
                             <a class="a-img" href="#">Khách sạn</a>
-                            <span class="btn-dropdown-menu" onclick="dropdownMenu1()"><i class="fa fa-angle-right"></i></span>
+                            <span class="btn-dropdown-menu" onclick="dropdownMenu1()"><i class="fa fa-angle-right" id="btn-dropdown-menu1"></i></span>
                             <ul class="sub-menu" id="dropdown-menu2">
                                 <li>
                                     <a href="#">THIẾT KẾ KHÁCH SẠN TÂN CỔ </a>
@@ -1999,7 +1983,7 @@
                         </li>
                         <li class="nav-item-mb">
                             <a class="a-img" href="#">Biệt thự</a>
-                            <span class="btn-dropdown-menu" onclick="dropdownMenu2()"><i class="fa fa-angle-right"></i></span>
+                            <span class="btn-dropdown-menu" onclick="dropdownMenu2()"><i class="fa fa-angle-right" id="btn-dropdown-menu2"></i></span>
                             <ul class="sub-menu" id="dropdown-menu3">
                                 <li>
                                     <a href="#">THIẾT KẾ BIỆT THỰ 2 TẦNG </a>
@@ -2020,7 +2004,7 @@
                         </li>
                         <li class="nav-item-mb">
                             <a class="a-img" href="#">Nhà phố</a>
-                            <span class="btn-dropdown-menu" onclick="dropdownMenu3()"><i class="fa fa-angle-right"></i></span>
+                            <span class="btn-dropdown-menu" onclick="dropdownMenu3()"><i class="fa fa-angle-right" id="btn-dropdown-menu3"></i></span>
                             <ul class="sub-menu" id="dropdown-menu4">
                                 <li>
                                     <a href="#">THIẾT KẾ NHÀ PHỐ 2 TẦNG </a>
@@ -2044,7 +2028,7 @@
                         </li>
                         <li class="nav-item-mb">
                             <a class="a-img" href="noi-that">Nội thất</a>
-                            <span class="btn-dropdown-menu" onclick="dropdownMenu4()"><i class="fa fa-angle-right"></i></span>
+                            <span class="btn-dropdown-menu" onclick="dropdownMenu4()"><i class="fa fa-angle-right" id="btn-dropdown-menu4"></i></span>
                             <ul class="sub-menu" id="dropdown-menu5">
                                 <li>
                                     <a href="noi-that-tan-co-dien">NỘI THẤT TÂN
@@ -2070,7 +2054,7 @@
                         </li>
                         <li class="nav-item-mb">
                             <a class="a-img" href="dinh-thu">Dinh thự</a>
-                            <span class="btn-dropdown-menu" onclick="dropdownMenu5()"><i class="fa fa-angle-right"></i></span>
+                            <span class="btn-dropdown-menu" onclick="dropdownMenu5()"><i class="fa fa-angle-right" id="btn-dropdown-menu5"></i></span>
                             <ul class="sub-menu" id="dropdown-menu6">
                                 <li>
                                     <a href="#">THIẾT KẾ
@@ -2092,7 +2076,7 @@
                         </li>
                         <li class="nav-item-mb">
                             <a class="a-img" href="#">Phong thủy</a>
-                            <span class="btn-dropdown-menu" onclick="dropdownMenu6()"><i class="fa fa-angle-right"></i></span>
+                            <span class="btn-dropdown-menu" onclick="dropdownMenu6()"><i class="fa fa-angle-right" id="btn-dropdown-menu6"></i></span>
                             <ul class="sub-menu" id="dropdown-menu7">
                                 <li>
                                     <a href="#">Tra cứu tuổi
@@ -2111,8 +2095,8 @@
                             </ul>
                         </li>
                         <li class="nav-item-mb">
-                            <a class="a-img" href="tu-van">Tư vấn</a>
-                            <span class="btn-dropdown-menu" onclick="dropdownMenu7()"><i class="fa fa-angle-right"></i></span>
+                            <a class="a-img" href="#">Tư vấn</a>
+                            <span class="btn-dropdown-menu" onclick="dropdownMenu7()"><i class="fa fa-angle-right" id="btn-dropdown-menu7"></i></span>
                             <ul class="sub-menu" id="dropdown-menu8">
                                 <li>
                                     <a href="#">Báo giá thiết kế</a>
